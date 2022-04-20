@@ -7,7 +7,7 @@
 " to get rid of them.
 " However, this has the effect of completely nullifying pascal type detection
 " for .pp files.
-au! BufRead,BufNewFile *.pp setfiletype puppet
+au! BufRead,BufNewFile *.pp set ft=puppet
 " Some epp files may get marked as "mason" type before this script is reached.
 " Vim's own scripts.vim forces the type if it detects a `<%` at the start of
 " the file. All files ending in .epp should be epuppet
